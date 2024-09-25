@@ -144,21 +144,17 @@ ol {
   width: 19px;
   height: 19px;
   margin-right: 5px;
-  color: transparent;
   border: 1px solid #FFFFFF;
-  position: relative; /* СЮДА СКОРЕЕ ВСЕГО НУЖНО БУДЕТ ВСТАВЛЯТЬ БЕЛЫЙ КВАДРАТ */
-  z-index: 0;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before{
   content: '';
-  position: absolute;
-  z-index: 1;
-  top: 1px;
-  left: 1px; /* мб надо будет поменять на инсет блок/инлайн */
+  display: block;
+  background-color: #FFFFFF;
   width: 15px;
   height: 15px;
-  background-color: #FFFFFF;
+  margin-top: 1px;
+  margin-left: 1px;
 }
 
 .button{
